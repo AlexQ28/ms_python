@@ -91,6 +91,16 @@ OPERADORES DE ASIGNACIONES
 # print(x)
 
 """
+COMPARACIONES
+"""
+print(7>4)  #Mayor
+print(7>=4)
+print(7<4)  #Menor
+print(7<=4)
+print(7==4) #Comparacion con doble igual
+print(7!=4) #Diferente
+
+"""
 Reglas de Prioridad
 =====================
 *PEMDAS"
@@ -208,28 +218,94 @@ and
 or
 """
 
-x = 11 
-print("expr1 = not x > 10")
-expr1 = not x > 10
-print(expr1)
+# x = 11 
+# print("expr1 = not x > 10")
+# expr1 = not x > 10
+# print(expr1)
 
 #cualquier valor diferente de cero es considerado True
 #False -> 0
-print("expr2 = (not x) > 10")
-expr2 = (not x) > 10
-print(expr2)
+# print("expr2 = (not x) > 10")
+# expr2 = (not x) > 10
+# print(expr2)
 
-x = 10
-y = 14
-z = 4
+# x = 10
+# y = 14
+# z = 4
 
-print("expr3 = not x > 10 or (y == z and x <= y)")
-expr3 = not x > 10 or (y == z and x <= y)
-#expr3 = not x > 10 or (False and True)
-#expr3 = not x > 10 or False
-#expr3 = not False or False 
-#expr3 = True
-print(expr3)
+# print("expr3 = not x > 10 or (y == z and x <= y)")
+# expr3 = not x > 10 or (y == z and x <= y)
+# #expr3 = not x > 10 or (False and True)
+# #expr3 = not x > 10 or False
+# #expr3 = not False or False 
+# #expr3 = True
+# print(expr3)
+
+#if 5>3:
+#  print('La condicion es verdadera')
+
+#CICLO while
+"""
+numero = 1
+while numero <= 10:
+  print(numero)
+  numero += 1
+
+continuar = 's'
+while continuar == 's':
+  print('Estas jugando')
+  continuar = input('Deseas seguir jugando?')
+"""
+numero = 7
+usuario = 0
+while usuario != numero:
+  usuario = int(input("Cual es el número?"))
+  if usuario > numero:
+    print("Digita un número menor")
+  elif usuario < numero:
+    print("Digita un número mayor")  
+  else:
+    print("correcto")
+
+#ARRAYS
+
+#Listas [] | Diccionarios {} | Tuplas ()
+amigos = ['Juan', 'Pedro', 'Luis']
+#append es un metodo para agregar un nuevo elemento
+#amigos.append('Maria')
+#print(amigos)
+
+#primerAmigo = amigos[-2]
+#print(primerAmigo)
+
+#cantidadDeAmigos = len(amigos) #len funcion de python que contabiliza los amigos
+#print(amigos[cantidadDeAmigos-1])
+
+#amigos = ['Juan', 'Pedro', 'Luis', 2019, True]
+#print(amigos)
+
+"""
+#{}Diccionarios
+mejoresAmigos = {
+  'Universidad': 'Juan',
+  'Barrio': 'Lucas',
+  'Trabajo': 'Javier'
+}
+
+print(mejoresAmigos['Barrio'])
+"""
+
+#()Tuplas
+#Las tuplas son listas que no permiten cambiar los elementos
+#
+#mejoresAmigas = ('Ana', 'Maria','Juana')
+#print(mejoresAmigas[1])
+
+alumnos = ['Juan', 'Pedro', 'Beto']
+
+for alumno in alumnos:
+  print(alumno)
+
 
 
 
